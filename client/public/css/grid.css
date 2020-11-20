@@ -1,0 +1,170 @@
+.wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+/* Login */
+
+.logo__container {
+  display: inherit;
+  width: 200px;
+  height: 150px;
+  /* background-image: url("img/logo.png"); */
+  justify-content: center;
+  align-items: center;
+}
+
+.login__container {
+  display: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 250px;
+
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.25), 0 2px 3px rgba(0,0,0,0.22);
+
+  background-color: rgb(223, 223, 223);
+  transition: box-shadow .2s linear;
+
+}
+
+.login__container:hover {
+  box-shadow: 5px 7px 7px hsla(0, 0%, 0%, 0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+.input__email {
+  margin: 15px;
+  width: 150px;
+  height: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+
+  transition: box-shadow .2s linear;
+
+}
+
+.input__email:focus {
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.25), 0 2px 3px rgba(0,0,0,0.22);
+
+}
+
+.input__email:hover {
+  box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.25), 0 2px 3px rgba(0,0,0,0.22);
+}
+
+.input__email:focus::placeholder {
+  color: transparent;
+}
+
+/* Project & Timesheet */
+
+/* .project__table {
+    margin-top: 50px;
+    width: 1000px;
+    height: 700px;
+} */
+
+/* .timesheet__table {
+    margin-top: 50px;
+    width: 1200px;
+    height: 700px;
+} */
+
+.sheet__column {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    height: 60px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.25), 0 2px 3px rgba(0,0,0,0.22);
+    border-radius: 5px;
+    align-items: center;
+
+    transition: background .2s linear;
+}
+
+.sheet__column__tsh {
+    display: grid;
+    grid-template-columns: 180px 180px repeat(9, 1fr);
+    height: 60px;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.25), 0 2px 3px rgba(0,0,0,0.22);
+    border-radius: 5px;
+    align-items: center;
+
+    transition: background .2s linear;
+}
+
+.sheet__column:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+.sheet__column__tsh:hover {
+    background-color: rgb(223, 223, 223);
+}
+
+.sheet__column:first-child {
+    box-shadow: none;
+}
+
+.sheet__column__tsh:first-child {
+    box-shadow: none;
+}
+
+.sheet__column:first-child:hover {
+    background-color: #fff;
+}
+
+.sheet__row {
+    opacity: .85;
+    transition: opacity .2s linear;
+}
+
+.sheet__row:hover {
+    opacity: 1;
+}
+
+.sheet__row:first-child {
+    box-shadow: none;
+}
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 30px;
+  
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+  
+    font-family: inherit;
+    font-size: 13px;
+    color: rgb(65, 63, 63);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.25), 0 2px 3px rgba(0,0,0,0.22);
+  
+    transition: background .2s linear;
+
+    outline: none;
+
+  }
+  
+  .btn--red {
+    background-color: rgb(230, 230, 230);
+  }
+  
+  .btn--red:hover {
+    background-color: #d8d8d8;
+    color: #fff;
+  }
